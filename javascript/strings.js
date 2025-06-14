@@ -1,5 +1,6 @@
 const name = "anika-khan"; // String literal
-const greeting = new String("hello");//another way to create a string
+const greeting = new String("hello");//another way to create a string  //object 
+console.log(typeof greeting)
 const age = 20;
 
 console.log(name + " is " + age + " years old"); // Concatenation
