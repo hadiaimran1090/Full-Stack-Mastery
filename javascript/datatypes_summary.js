@@ -52,3 +52,26 @@ console.log( typeof myFunction); // function=>object function
 console.log( typeof nullValue);//null=>object
 
 
+//************************************************************** */
+console.log("memory allocation in javascript");
+ /* 
+   stack memory  (primitive data types) -->copy
+*/
+ let myname = "Hadia"
+ let myname2 = myname; // copy of value
+    myname2 = "Imran"; // changing myname2 does not affect myname
+    console.log(myname); // Output: Hadia
+    console.log(myname2); // Output: Imran
+/*
+   heap memory  (non-primitive data types) -->reference 
+ */
+
+   let user1 = {
+    name: "Hadia",
+    age: 20,
+    isStudent: true,
+   };
+let user2 = user1; // reference to the same object
+user2.name = "Imran"; // changing user2 affects user1
+console.log(user1.name); // Output: Imran
+console.log(user2.name); // Output: Imran
