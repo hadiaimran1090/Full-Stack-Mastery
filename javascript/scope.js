@@ -10,3 +10,29 @@ if(true){
 //console.log(z); // 30, var is function scoped or globally scoped
 
 console.log(x); // Output: 40, global x is accessible here
+
+function one(){
+    const email="some@gmail.com"
+    function two(){
+        channel="youtube";
+        console.log(email)//email is global for fun two
+    }
+   // console.log(channel); 
+   two();
+}
+one();
+
+console.log(addone(6))//access func before declaration
+//function declaration
+function addone(num){
+    return num +1;
+}
+//addone(6);
+
+
+//addtwo(5)//error   cannnot access before declaration
+//func declare and store in var
+const addtwo =function(num){
+    return num + 2;
+}
+addtwo(5);
