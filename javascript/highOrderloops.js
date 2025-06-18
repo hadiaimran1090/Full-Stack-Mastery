@@ -78,3 +78,4 @@ const mycode=[
 mycode.forEach((val)=>{
    console.log(val)
 })
+//not return values
