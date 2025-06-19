@@ -1,0 +1,85 @@
+<!--DCUMENT OBJECT MODEL-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM learning</title>
+</head>
+<body>
+    <div class="bg-black">
+        <h1  style="color:blanchedalmond" class="title" id="headingg">javascript </h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat, eius. Veniam autem consectetur
+             odio eligendi beatae ullam est id soluta ut magni dolorum, voluptatem tenetur, voluptate unde
+              iusto minus necessitatibus?
+        </p>
+        <ul>
+            <li>one</l>
+            <li>two</li>
+            <li>three</li>
+
+
+
+        </ul>
+    </div>
+    
+</body>
+</html>
+<!--DOM-->
+<!--window --- document ---HTML ---head(meta(attribute)+title(text node))++body(div(h1(attribute+textnode)+p(text node))) -->
+<!--
+
+📘 JavaScript DOM Notes (Text Form)
+***1. document.getElementById("headingg")
+Yeh method kisi bhi element ko uske id se select karta hai.
+Example: Agar HTML mein <h1 id="headingg">Hello</h1> hai, to yeh us element ko return karega.
+
+***2. .id
+Kisi element ka id property return karta hai.
+Example: document.getElementById("headingg").id output: "headingg"
+
+***3. .getAttribute("id")
+Yeh method specified attribute ka value return karta hai.
+Example: document.getElementById("headingg").getAttribute("id") output: "headingg"
+
+***4. .setAttribute("class", "test")
+Kisi element par naya attribute set karta hai ya existing ko change karta hai.
+Example: document.getElementById("headingg").setAttribute("class", "test")
+Ab element ki class "test" ho jaayegi.
+
+***5. .style.backgroundColor = "green"
+Kisi element ka background color change karne ke liye hota hai.
+ element.style.backgroundColor = "green"
+
+***6. .textContent
+Element ke andar ka poora text (chaahe wo hidden ho ya visible) return karta hai.
+Example: title.textContent
+
+***7. .innerText
+Sirf visible text return karta hai, CSS rules ka asar hota hai.
+Example: title.innerText
+
+***8. innerHTML
+Yeh method element ke andar ka HTML code (with tags) return karta hai.
+Example: title.innerHTML
+
+****9:document.getElementsByClassName('title')
+
+****10:document.querySelector('h1')
+<h1 style=​"color:​blanchedalmond" class=​"title" id=​"headingg">​javascript ​</h1>​
+document.querySelector('#headingg')
+document.querySelector('.title')
+const myul=document.querySelector('ul')
+myul.document.querySelector('li')
+
+****11:document.querySelectorAll('h1')
+document.querySelectorALL('li')
+
+forEach ek JavaScript method hai jo kisi list ya collection ke har element par loop lagata hai.
+DOM mein use hota hai jab hum multiple elements ko target karte hain (e.g. sare paragraphs, sare buttons).
+
+const paras = document.querySelectorAll("p");
+paras.forEach(function(p) {
+  p.style.color = "blue";
+});
+
+-->

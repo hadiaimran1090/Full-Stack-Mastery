@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Practice
+    </title>
+</head>
+<body style="background-color: rgb(124, 119, 119); color: aliceblue;">
+    <ul class="language">
+        <li style="color: aliceblue;">javascript</li>
+    </ul>
+    
+</body>
+<script>
+    function addlang(lngname){
+      const list=document.createElement('li')
+      list.innerHTML=`${lngname}`
+      document.querySelector('.language').appendChild(list)
+    }
+    addlang("python")
+    addlang("cpp")
+
+    ///optimized way
+    function addOPTIlang(lngname){
+      const list=document.createElement('li')
+      list.appendChild(document.createTextNode(lngname))
+      document.querySelector('.language').appendChild(list)
+    }
+    addOPTIlang("OOP")
+       
+    //edit
+         document.querySelector('.language').children[2].innerText="CSS"
+
+      const firstLang = document.querySelector("li:first-child");
+      firstLang.outerHTML = '<li> hi javascript </li>';
+
+      ///remove
+const lastLang = document.querySelector("li:last-child");
+lastLang.remove()
+</script>
+</html
