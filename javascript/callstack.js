@@ -1,5 +1,6 @@
 //1.Global Eecution context is different for different environment
      //for browser  value of this  object is window
+     //for node this is {} in GEC
       // js code is run in global execution context
     //1*.Memory phase(creation phase)   
        //memory allocation to all variables
